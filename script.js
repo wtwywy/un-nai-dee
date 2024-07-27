@@ -6,10 +6,10 @@ function addProduct() {
   const row = document.createElement('tr');
   row.id = `product-form-${productCount}`;
   row.innerHTML = `
-      <td><input type="text" class="form-control" id="productName${productCount}" placeholder="Product ${productCount} Name" /></td>
-      <td><input type="number" class="form-control" id="productVolume${productCount}" placeholder="Volume" /></td>
-      <td><input type="number" class="form-control" id="productPrice${productCount}" placeholder="Price" /></td>
-      <td><button class="btn btn-danger" onclick="removeProduct(${productCount})">Remove</button></td>
+      <td><input type="text" class="form-control" id="productName${productCount}" placeholder="${String.fromCharCode(64+productCount)}" /></td>
+      <td><input type="number" class="form-control" id="productVolume${productCount}" placeholder="0.0" /></td>
+      <td><input type="number" class="form-control" id="productPrice${productCount}" placeholder="0.0" /></td>
+      <td><button class="btn btn-danger" onclick="removeProduct(${productCount})">X</button></td>
   `;
   tableBody.appendChild(row);
 }
