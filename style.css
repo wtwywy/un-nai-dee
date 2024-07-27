@@ -9,8 +9,7 @@ body {
     text-align: center; /* Center text */
 }
 .container {
-    width: 80%;
-    max-width: 600px;
+    width: 100vw;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
