@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shoping smart</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Product Comparison</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td><h1>*</h1></td>
-            <td><h1>A</h1></td>
-            <td><h1>B</h1></td>
-        </tr>
-        <tr>
-            <td><p>Name</p></td>
-            <td><input type="text" id="a-name"></td>
-            <td><input type="text" id="b-name"></td>
-        </tr>
-        <tr>
-            <td><p>Size</p></td>
-            <td><input type="number" id="a-size"></td>
-            <td><input type="number" id="b-size"></td>
-        </tr>
-        <tr>
-            <td><p>Price</p></td>
-            <td><input type="number" id="a-price"></td>
-            <td><input type="number" id="b-price"></td>
-        </tr>
-    </table>
-    <button onclick="compare()">compare</button>
-    <p id="answer"></p>
-    <script src="script.js"></script>
+  <div class="container">
+    <h2>Product Comparison</h2>
+    <div id="product-forms">
+      <!-- Product input fields will be added here dynamically -->
+    </div>
+    <button class="btn btn-secondary" onclick="addProduct()">Add Product</button>
+    <button class="btn btn-primary" onclick="compareProducts()">Compare</button>
+    <div id="result" class="mt-3"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
