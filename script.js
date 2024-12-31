@@ -6,7 +6,7 @@ function addProduct() {
   const row = document.createElement('tr');
   row.id = `product-form-${productCount}`;
   row.innerHTML = `
-      <td><input type="text" class="form-control" id="productName${productCount}" placeholder="สินค้า ${String.fromCharCode(64+productCount)}" /></td>
+      <td><input type="text" class="form-control" id="productName${productCount}" placeholder="${String.fromCharCode(64+productCount)}" /></td>
       <td><input type="number" class="form-control" id="productVolume${productCount}" placeholder="0" /></td>
       <td><input type="number" class="form-control" id="productPrice${productCount}" placeholder="0" /></td>
       <td><button class="btn btn-danger" onclick="removeProduct(${productCount})">X</button></td>
@@ -21,7 +21,7 @@ function removeProduct(id) {
 function compareProducts() {
   const products = [];
   for (let i = 1; i <= productCount; i++) {
-    const name = document.getElementById(`productName${i}`)?.value || `สินค้า ${String.fromCharCode(64+i)}`;
+    const name = document.getElementById(`productName${i}`)?.value || `${String.fromCharCode(64+i)}`;
     const volume = parseFloat(document.getElementById(`productVolume${i}`)?.value) || 0;
     const price = parseFloat(document.getElementById(`productPrice${i}`)?.value) || 0;
     if (volume > 0 && price > 0) {
