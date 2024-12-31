@@ -1,0 +1,12 @@
+Unnaidee Calculator
+    A = Voulmn/Price Higher is better
+Unnaidee Rotate view
+    ช่วยเลือกให่ด้วยการสุ่ม
+
+Unnaidee Games
+    เกม would you rather
+Unnaidee PickAVersusB / Score / Star
+    เราอยากเทียบสองตัว เทียบเชิงคุณภาพ
+
+Unnaidee Ads
+    ช่องทางป้ายยา
